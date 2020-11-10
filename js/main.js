@@ -3,14 +3,14 @@
 const app = new Vue({
   el:'#app',
   data:{
+    indexItem: 0,
     items: [
       { message: 'Fare colazione' },
       { message: 'Palestra' },
       { message: 'Doccia' },
       { message: 'Corso Boolean' },
     ],
-    text:'',
-    // item: { message: '' }
+    text: '',
   },
   methods:{
     add(){
@@ -18,7 +18,8 @@ const app = new Vue({
       this.text='';
     },
     del(index){
-      this.items.$remove(index);
-    }
+      this.items.indexOf(index);
+      console.log(index);
+    },
   },
 });
