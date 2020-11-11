@@ -33,6 +33,7 @@ body {
 .add {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* MAIN-CONTENT */
@@ -85,7 +86,12 @@ button {
 @media screen and (max-width: 520px) {
   /* ADD */
   input{
+    width: 80%;
+    margin: 0 auto;
+  }
 
+  button {
+    margin-top: 20px;
   }
 
 }
