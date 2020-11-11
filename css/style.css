@@ -15,20 +15,18 @@ body {
 
 #app {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0 15px;
   height: 600px;
-  background-color: rgba(0,0,0,0.8);
-  /* overflow-y: auto; */
+  background-color: rgba(0,0,0,0.9);
+  overflow-y: auto;
+  border-radius: 10px;
 }
 
-main{
-  height: 100vh;
-}
+
 /* HEADER */
 .main-header {
   text-align: center;
-  text-transform: uppercase;
   margin: 20px;
 }
 
@@ -81,4 +79,13 @@ button {
 
 .list li:last-child{
   border-bottom:none;
+}
+
+/* MEDIAQUERY */
+@media screen and (max-width: 520px) {
+  /* ADD */
+  input{
+
+  }
+
 }

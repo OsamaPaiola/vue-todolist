@@ -27,15 +27,18 @@
         </div>
 
         <div class="list">
-          <ul>
+
+          <ul v-if="items.length">
             <li v-for="(item, index) in items">
               <span>{{ item.message }}</span>
-              <i  @click= "del" class="fas fa-trash-alt"></i>
+              <i  @click= "del(index)" class="fas fa-trash-alt"></i>
             </li>
           </ul>
+          <p v-else>Inserisci todo item</p>
         </div>
 
       </main>
+
 
     </div>
 

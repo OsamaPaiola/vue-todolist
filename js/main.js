@@ -1,9 +1,9 @@
 
 
+
 const app = new Vue({
   el:'#app',
   data:{
-    indexItem: 0,
     items: [
       { message: 'Fare colazione' },
       { message: 'Palestra' },
@@ -11,15 +11,19 @@ const app = new Vue({
       { message: 'Corso Boolean' },
     ],
     text: '',
+    true: 'true',
   },
   methods:{
     add(){
-      this.items.push({ message: this.text});
-      this.text='';
+      if(this.text !== ''){
+        this.items.push({ message: this.text});
+        this.text='';
+      }else{
+        text = '';
+      }
     },
     del(index){
-      this.items.indexOf(index);
-      console.log(index);
+      this.items.splice(index,1);
     },
   },
 });
